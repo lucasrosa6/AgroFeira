@@ -1,0 +1,309 @@
+/* Segunda Section */
+#segunda-section {
+    background-color: var(--verde-clarinho);
+}
+
+/* Box Principal */
+.box-segunda-section {
+    width: 100%;
+    height: 100vw;
+    text-align: center;
+}
+
+/* Ligação com Montanha */
+.box-ligacao-montanha {
+    width: 100%;
+    height: 30vw;
+    display: flex;
+    position: absolute;
+    z-index: 1;
+}
+
+.box-ligacao-montanha img {
+    width: 100%;
+    user-select: none;
+    z-index: 1;
+}
+
+/* Título - O que temos para oferecer */
+.tit-o-que-temos-para-oferecer {
+    width: 50%;
+    margin-top: 5vw;
+    margin-bottom: -5vw;
+    user-select: none;
+}
+
+/* Caixa Apresentação */
+.caixa-apresentacao {
+    width: 80%;
+    margin: 0 auto;
+    background: var(--verde-escurinho);
+    border-radius: 1vw;
+}
+
+/* Título - Categorias */
+.tit-categorias {
+    width: 30%;
+    user-select: none;
+}
+
+/* Área de Categorias */
+#categorias {
+    width: 100%;
+    display: flex;
+}
+
+#categorias a {
+    text-decoration: none;
+}
+
+.categorias-box-links {
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.categorias-box-links:hover {
+    transform: scale(1.1);
+    user-select: none;
+    filter: drop-shadow(0px 0px 5px #ffffff);
+}
+
+.categorias-box-links:active {
+    transform: scale(1.5);
+    user-select: none;
+    filter: drop-shadow(0px 0px 5px var(--verde-saturado));
+}
+
+.categorias-box-links img {
+    width: 80%;
+    user-select: none;
+}
+
+.categorias-box-links p {
+    font-family: var(--font-principal);
+    font-size: 2vw;
+    font-weight: bold;
+    color: #FFFFFF;
+    padding: 1vw;
+}
+
+/* Título - Produtos */
+.tit-produtos {
+    width: 30%;
+    user-select: none;
+}
+
+/* Área de Produtos */
+#produtos {
+    width: 100%;
+    justify-content: space-around;
+    display: flex;
+}
+
+#produtos a {
+    text-decoration: none;
+}
+
+/* Box Produtos */
+.box-produtos {
+    width: 100%;
+    position: relative;
+    display: inline-block;
+}
+
+/* Card Produto */
+.produtos-box-links {
+    width: 80%;
+    height: 25vw;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    background: #FFFFFF;
+    border-radius: 2vw;
+    transition: transform 0.3s ease;
+    margin-bottom: 5vw;
+}
+
+.produtos-box-links:hover {
+    transform: scale(1.1);
+    user-select: none;
+    filter: drop-shadow(0px 0px 5px #ffffff);
+}
+
+.produtos-box-links:active {
+    transform: scale(1.4);
+    filter: drop-shadow(0px 0px 5px var(--verde-saturado));
+}
+
+.produtos-box-links img {
+    width: 80%;
+    user-select: none;
+}
+
+/* Título Produto */
+.titulo-produtos {
+    font-family: var(--font-principal);
+    font-size: 2vw;
+    font-weight: bold;
+    color: var(--verde-escurinho);
+    padding: 1vw;
+}
+
+/* Preço Produto */
+.preco-produtos {
+    font-family: var(--font-principal);
+    font-size: 2vw;
+    font-weight: bold;
+    color: var(--verde-cinza);
+    padding: 1vw;
+}
+
+/* Botão Adicionar ao Carrinho */
+.box-adicionar-carrinho {
+    width: 80%;
+    height: 5vw;
+    margin: auto;
+    margin-top: 1vw;
+    display: flex;
+    align-items: center;
+    border-radius: 1.5vw;
+    background: var(--verde-saturado);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    top: 85%;
+    left: 10%;
+}
+
+.box-produtos:hover .box-adicionar-carrinho {
+    display: flex;
+}
+
+.box-adicionar-carrinho:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0px 0px 5px var(--verde-saturado));
+}
+
+.box-adicionar-carrinho p {
+    font-family: var(--font-principal);
+    font-size: 1.5vw;
+    font-weight: bold;
+    color: #FFFFFF;
+    padding: 1vw;
+}
+
+.box-adicionar-carrinho img {
+    width: 15%;
+    margin: auto;
+    padding-right: 1vw;
+    user-select: none;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    /* Box Principal */
+    .box-segunda-section {
+        height: 205vw;
+    }
+
+    /* Ligação com Montanha */
+    .box-ligacao-montanha {
+        width: 107%;
+        height: 30vw;
+    }
+
+    /* Título - O que temos para oferecer */
+    .tit-o-que-temos-para-oferecer {
+        width: 80%;
+        margin-top: 1vw;
+        margin-bottom: -10vw;
+    }
+
+    /* Caixa Apresentação */
+    .caixa-apresentacao {
+        width: 90%;
+        height: 176vw;
+    }
+
+    /* Título - Categorias */
+    .tit-categorias {
+        width: 40%;
+    }
+
+    /* Área de Categorias */
+    .categorias-box-links:hover {
+        transform: scale(1.2);
+        filter: drop-shadow 0px 0px 5px #ffffff;
+    }
+
+    .categorias-box-links:active {
+        transform: scale(1.5);
+        filter: drop-shadow 0px 0px 5px var(--verde-saturado);
+    }
+
+    .categorias-box-links p {
+        font-family: var(--font-principal);
+        font-size: 2.4vw;
+    }
+
+    /* Título - Produtos */
+    .tit-produtos {
+        width: 40%;
+        margin-bottom: -3vw;
+    }
+
+    /* Área de Produtos */
+    #produtos {
+        width: 100%;
+        height: 120vw;
+        display: block;
+    }
+
+    /* Box Produtos */
+    .box-produtos {
+        width: 45%;
+    }
+
+    /* Card Produto */
+    .produtos-box-links {
+        width: 95%;
+        height: 48vw;
+        transition: transform 0.1s ease;
+        margin: 0vw 1vw 15vw 1vw;
+    }
+
+    .produtos-box-links:active {
+        transform: scale(1.4);
+        filter: drop-shadow(0px 0px 5px var(--verde-saturado));
+    }
+
+    /* Título Produto */
+    .titulo-produtos {
+        font-size: 3.5vw;
+    }
+
+    /* Preço Produto */
+    .preco-produtos {
+        font-size: 3.5vw;
+        padding: 2vw;
+    }
+
+    /* Botão Adicionar ao Carrinho */
+    .box-adicionar-carrinho {
+        width: 100%;
+        height: 8vw;
+        margin-top: -1vw;
+        transition: transform 0.1s ease;
+        left: 0%;
+    }
+
+    .box-adicionar-carrinho p {
+        font-size: 3vw;
+    }
+
+    .box-adicionar-carrinho img {
+        padding-right: 3vw;
+    }
+
+}

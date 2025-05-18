@@ -1,0 +1,27 @@
+/* Conexão com outros CSS */
+@import url(CSS/Reset/reset.css);
+/* Index */
+@import url(CSS/Header/Index/header.css);
+@import url(CSS/Sections/Index/primeira-section.css);
+@import url(CSS/Sections/Index/segunda-section.css);
+@import url(CSS/Sections/Index/terceira-section.css);
+@import url(CSS/Sections/Index/quarta-section.css);
+@import url(CSS/Footer/Index/footer.css);
+
+:root {
+    --fundo-ceu-azul: #bef2fb;
+    --verde-escuro: #2d542f;
+    --verde-escurinho: #4b6900;
+    --verde-saturado: #74c125;
+    --verde-claro: #739e82;
+    --verde-clarinho: #f3ffb6;
+    --verde-cinza: #7c8e7d;
+    --marrom-fraco: #efc5a6;
+    --marrom: #99621e;
+    
+    --font-principal: sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}

@@ -1,0 +1,185 @@
+/* Primeira Section */
+#primeira-section {
+    background-color: var(--fundo-ceu-azul);
+    overflow: hidden;
+}
+
+/* Caixa da Section */
+.box-primeira-section {
+    width: 100%;
+    height: 45vw;
+    position: relative;
+    background-color: var(--fundo-ceu-azul);
+}
+
+/* Caixa de Pesquisa */
+.box-pesquisa {
+    width: 50%;
+    top: 6vw;
+    left: 35vw;
+    display: flex;
+    position: absolute;
+    z-index: 5;
+}
+
+.box-pesquisa input {
+    text-align: center;
+    font-size: 1vw;
+    padding: 1vw 20%;
+    color: white;
+    border: var(--verde-escuro);
+    border-radius: 5vw;
+    outline: none;
+    background-color: var(--verde-escuro);
+    background-image: url('/Imagens/Icons/Lupa.png');
+    background-size: 7%;
+    background-position: center left 1vw;
+    background-repeat: no-repeat;
+}
+
+/* Caixa da Nuvem */
+.box-nuvem {
+    position: relative;
+    width: 100vw;
+    height: 10vw;
+}
+
+.box-nuvem img {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 20vw;
+    animation: movimento-nuvem 15s linear infinite;
+    user-select: none;
+}
+
+/* Animação da Nuvem */
+@keyframes movimento-nuvem {
+    0% {
+        left: 0%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+/* Caixa da Montanha */
+.box-montanha {
+    width: 100%;
+    height: 45vw;
+    display: flex;
+    position: absolute;
+    z-index: 1;
+}
+
+.box-montanha img {
+    width: 100%;
+    user-select: none;
+    z-index: 1;
+}
+
+/* Caixa da Vaca */
+.box-vaca {
+    width: 30%;
+    height: 30vw;
+    position: absolute;
+    top: 15vw;
+    left: 4vw;
+    z-index: 3;
+    user-select: none;
+}
+
+.box-vaca img {
+    width: 100%;
+    user-select: none;
+    z-index: 3;
+}
+
+/* Caixa do Porco */
+.box-porco {
+    width: 10%;
+    height: 10vw;
+    position: absolute;
+    top: 20vw;
+    left: 40vw;
+    z-index: 3;
+    user-select: none;
+}
+
+.box-porco img {
+    width: 100%;
+    user-select: none;
+    z-index: 3;
+}
+
+/* Caixa da Galinha */
+.box-galinha {
+    width: 25%;
+    height: 25vw;
+    position: absolute;
+    top: 9vw;
+    right: 5vw;
+    z-index: 3;
+    user-select: none;
+}
+
+.box-galinha img {
+    width: 100%;
+    user-select: none;
+    z-index: 3;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    /* Caixa da Section */
+    .box-primeira-section {
+        height: 70vw;
+    }
+
+    /* Caixa de Pesquisa */
+    .box-pesquisa {
+        width: 50%;
+        top: 3vw;
+        left: 15%;
+    }
+
+    .box-pesquisa input {
+        font-size: 4vw;
+    }
+
+    /* Montanha */
+    .box-montanha {
+        width: 100%;
+        height: 60vw;
+        display: flex;
+        position: absolute;
+        z-index: 1;
+    }
+
+    .box-montanha img {
+        width: 100%;
+        user-select: none;
+        z-index: 1;
+    }
+
+    /* Vaca */
+    .box-vaca {
+        width: 35%;
+        left: 5vw;
+        top: 30vw;
+    }
+
+    /* Porco */
+    .box-porco {
+        width: 16%;
+        top: 20vw;
+        left: 35vw;
+    }
+
+    /* Galinha */
+    .box-galinha {
+        top: 10vw;
+        right: 5vw;
+    }
+}

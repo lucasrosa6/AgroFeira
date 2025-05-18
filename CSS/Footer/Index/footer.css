@@ -1,0 +1,109 @@
+/* Rodapé */
+#rodape {
+    background: #d38b5d;
+    position: relative;
+}
+
+/* Fundo do Rodapé */
+.box-fundo-footer {
+    width: 100%;
+    height: 40vw;
+}
+
+.box-fundo-footer img {
+    width: 100%;
+    height: 40vw;
+    user-select: none;
+}
+
+/* Titulo Contato no Rodapé */
+.box-contato-footer {
+    width: 30vw;
+    height: 40vw;
+    position: absolute;
+    top: 20vw;
+    left: 34vw;
+    z-index: 1;
+}
+
+.box-contato-footer img {
+    width: 100%;
+    height: 20vw;
+    user-select: none;
+}
+
+/* Área de contato no rodapé */
+.box-formulario-contato {
+    background-color: var(--marrom);
+    width: 100%;
+    padding-bottom: 5vw;
+}
+
+.formulario {
+    width: 80%;
+    margin: auto;
+    padding: 3%;
+    border-radius: 3vw;
+    background: #ffffff;
+    font-family: var(--font-principal);
+}
+
+.formulario h2{
+    font-family: var(--font-principal);
+    font-size: 2vw;
+    color: #000000;
+    padding-bottom: 1vw;
+}
+
+.formulario label {
+    font-family: var(--font-principal);
+    font-weight: bold;
+    font-size: 1.5vw;
+    color: #000000;
+}
+
+.formulario input, textarea {
+    width: 100%;
+    padding: 1vw;
+    margin-left: -1.1vw;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    background-color: #f8f8f8;
+    border: 0.1vw solid rgb(8, 8, 8);
+    border-radius: 2vw;
+}
+
+.formulario button {
+    background-color: var(--verde-saturado);
+    color: #ffffff;
+    font-size: 2vw;
+    padding: 1vw 3vw;
+    font-weight: bold;
+    border-radius: 5vw;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.formulario button:hover {
+    background-color: var(--verde-escurinho);
+    color: #ffffff;
+    transform: scale(1.1);
+    border: none;
+}
+
+
+/* Copyright */
+#copyright {
+    width: 100%;
+    text-align: center;
+    background: var(--marrom);
+}
+
+#copyright p {
+    color: var(--marrom-fraco);
+    font-size: 2vw;
+    font-weight: bold;
+    padding: 1vw 0;
+    font-family: var(--font-principal);
+}
